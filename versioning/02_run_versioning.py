@@ -212,7 +212,7 @@ def version(user_id, user_pass, user_cert=None):
 
 
 if __name__ == "__main__":
-    tree = elemTree.parse(r'../config/.config.xml')
+    tree = elemTree.parse(r'C:\Users\erosi\OneDrive\문서\GitHub\AIFT2022\config\.config.xml')
     root = tree.getroot()
     node_login = root.find('./Login')
     config_db = {tag:node_login.find(tag).text for tag in ['id', 'password', 'cert_password']}
